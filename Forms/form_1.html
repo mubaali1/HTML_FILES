@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login_form</title>
+    <title>Sign_in</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<form action="/server">
-    <h2 style="color:blue">Welcome to MbRk's page</h2>
+<form>
+    <h2>Welcome to MbRk's page</h2>
     <div>
         <label for="u_id">Enter username</label>
         <input type="text" id="u_id" name="u_id" placeholder="username">
@@ -20,29 +21,21 @@
     <br>
     <div>
         <label><b>Select your gender:</b></label>
+        <!-- Changed to radio buttons with the same 'name' attribute -->
+        <input type="radio" id="m" name="gender" value="male"/>
         <label for="m">Male</label>
-        <input type="checkbox" id="m" name="Male"/>
+        <input type="radio" id="f" name="gender" value="female"/>
         <label for="f">Female</label>
-        <input type="checkbox" id="f" name="Female"/>
+        <input type="radio" id="o" name="gender" value="others"/>
+        <label for="o">Others</label>
     </div>
     <br>
     <div>
         <label for="age">Select your age:</label>
-        <input type="number" id="age" name="age" placeholder="age">
+        <!-- Added min attribute for validation -->
+        <input type="number" id="age" name="age" placeholder="age" min="18" max="99">
     </div>
-
-    <!--    <div>-->
-    <!--        <label for="gndr">Please select your Gender:</label>-->
-    <!--        <select name="gndr" id="gndr">-->
-    <!--            <option value="">&#45;&#45;Please choose an option&#45;&#45;</option>-->
-    <!--            <option value="Male">Male</option>-->
-    <!--            <option value="Female">Female</option>-->
-    <!--            <option value="Others">Others</option>-->
-    <!--            <option value="Don't want to disclose">Don't want to disclose</option>-->
-    <!--        </select>-->
-    <!--    </div>-->
     <br>
-
     <div>
         <label for="Qualification">Please select your Occupation:</label>
         <select name="qualification" id="Qualification">
@@ -53,20 +46,28 @@
             <option value="Postman">Postman</option>
             <option value="Teacher">Teacher</option>
             <option value="Business">Business</option>
+            <option value="Others">Others</option>
         </select>
     </div>
-    <!--    <br>-->
-    <!--    <div>-->
-    <!--        <label for="Range">Select your Range</label>-->
-    <!--        <input-->
-    <!--                type="range"-->
-    <!--                id="Range"-->
-    <!--                name="cowbell"-->
-    <!--                min="0"-->
-    <!--                max="100"-->
-    <!--                value="30"-->
-    <!--                step="1"/>-->
-    <!--    </div>-->
+    <!-- New field for "Other Profession" - initially hidden -->
+    <br>
+    <div id="otherProfessionDiv">
+        <label for="other_profession">Please specify your profession:</label>
+        <input type="text" id="other_profession" name="other_profession" placeholder="Your profession">
+        <div id="professionError" class="error-message"></div>
+    </div>
+<!--        <br>-->
+<!--        <div>-->
+<!--            <label for="Range">Select your Range</label>-->
+<!--            <input-->
+<!--                    type="range"-->
+<!--                    id="Range"-->
+<!--                    name="cowbell"-->
+<!--                    min="0"-->
+<!--                    max="100"-->
+<!--                    value="30"-->
+<!--                    step="1"/>-->
+<!--        </div>-->
     <br>
     <div>
         <label for="avatar">Choose a profile picture:</label>

@@ -1,0 +1,35 @@
+*{
+    font-family : "courier new";
+    background-color: white;
+}
+
+#login{
+    background-color: cyan;
+    color:black;
+}
+#signup{
+    background-color: cyan;
+    color:black;
+}
+
+h1, h3{
+color:red;
+}
+
+p + h3 {
+text-decoration: underline;
+}
+
+nav ul li a{
+color:red;
+}
+
+.upvote{
+background-color:grey;
+color:white;
+}
+
+.upvote + button {
+background-color:lightblue;
+color:black;
+}
