@@ -1,0 +1,30 @@
+  button{
+    background: red;
+    color : white;
+    font-weight : 1px;
+  }
+
+  *{
+    font-family: courier new;
+  }
+
+  h2:hover, h2:active { /* Corrected: separated :hover and :active with h2 prefix */
+       background: black;
+       font-weight: bold;
+       color: #1b74e4;
+       padding: 10px; /* Corrected: changed 'font-padding' to 'padding' */
+  }
+
+  button:hover, active{
+    background-color:aqua;
+    font-weight: bold;
+    color:black;
+  }
+
+  button:active{
+    background-color:green;
+    color:black;
+  }
+
+
+
