@@ -33,3 +33,6 @@ color:white;
 background-color:lightblue;
 color:black;
 }
+h1::first-letter{
+color:green;
+}
