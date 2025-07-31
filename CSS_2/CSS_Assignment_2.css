@@ -1,0 +1,41 @@
+        /*Align all contents to center */
+        *{
+            text-align:Center;
+        }
+
+        /*I've added the id="mainTopic" to the <h1> tag*/
+        #mainTopic {
+            color: blue;
+        }
+        /*Changing the font style to Georgia of headings h1,h2,h3*/
+        h1, h2, h3 {
+        font-family: Georgia;
+        }
+        /*Set the color of all the paragraphs to white & background color to cornflower blue.(Without using the element selector - 'p')*/
+        .pera {
+            background-color:cornflowerblue;
+            color:white;
+        }
+        /*Select all buttons inside div and change their background color to purple & text color to azure.*/
+        div>button {
+            background-color:purple;
+            color:azure;
+        }
+        /*Change the button background color to yellow & text color to blue when we hover over it.*/
+        button:hover {
+            background-color:yellow;
+            color:blue;
+        }
+        /*Change the color of every odd numbered paragraph to yellow. (Paragraph 1 & 3)*/
+        p:nth-of-type(odd) {
+            color:yellow;
+        }
+        /*Change the color of the first letter of h1 heading to red.*/
+        h1::first-letter {
+            color:red;
+        }
+        /*Set the text color of the checkbox label to dark green when the checkbox is ticked.*/
+        #yes:checked + label{
+            color: green;
+            font-weight:bold;
+        }
