@@ -10,7 +10,7 @@
     <header>
         <h1 style="color: red; font-family: 'Arial', sans-serif;
  font-size: 1.5em; text-align: left; padding: 1px; background-color: #ecf0f1;
- border-radius: 20px; width: 9%; margin: 1px;">Mubarak Ali</h1>
+ border-radius: 20px; width:max-content; margin: 1px;">Mubarak Ali</h1>
     </header>
 
     <p>I am an Embedded Engineer at <span style="color: red;"><b>SanDisk</b></span> India Device Design
@@ -24,23 +24,53 @@
     </samp>
 
     <hr>
-    <samp>
-        <!--<img src="IMG-20250306-WA0005.jpg" alt = "my_image" width="450" height="250">-->
-        <img src="../images/IMG-20250306-WA0005.jpg" alt="my_image" width="450" height="250" style="border: 2.5px solid #333;
-            /* Frame-like border */
-                padding: 1.5px;
-            /* Space between image and border */
-                float: center;
-            /* Position to the right */
-                margin-left: 1px;
-            /* Space from content on the left */
-                margin-bottom: 20px;
-            /* Space below the image */
-                 box-shadow: 10px 1px 100px rgba(1000,40,1,100);">
-    </samp>
+
+    <!--        <img src="IMG-20250306-WA0005.jpg" alt = "my_image" width="450" height="250">-->
+    <div>
+        <img src="../images/IMG-20250306-WA0005.jpg" alt="my_image"
+             width="350" height="350" style="border: 2.2px solid #333;
+                /* Corrected typo and applied top-right radius */
+                   border-radius: 50px 0px 50px 0px;
+                /* Height and width*/
+                   width:350px;
+                   height:350px;
+                /* Frame-like border */
+                    padding: 2.5px;
+                /* Space between image and border */
+                /*display: block;*/
+                /* Make the image a block element */
+                    margin-left: left;
+                /* Center the image horizontally */
+                    margin-right: auto;
+                /* Center the image horizontally */
+                /*margin-bottom: 20px;*/
+                /* Space below the image */
+                    box-shadow: 10px 1px 100px rgba(200, 20, 10, 0.5);">
+
+
+        <img src="../images/20241024_143356.jpg" alt="my_image" style="
+        border: 2.2px solid #333;
+        /* Corrected typo and applied top-right radius */
+        border-radius: 0 50px 0 50px;
+        /* Height and width*/
+        width:350px;
+        height:350px;
+        /* Frame-like border */
+        padding: 2.5px;
+<!--        /* Space between image and border */-->
+<!--        display: block;-->
+        /* Make the image a block element */
+        margin-left: left;
+        /* Center the image horizontally */
+        margin-right: auto;
+<!--        /* Center the image horizontally */-->
+<!--        margin-bottom: 20px;-->
+        /* Space below the image */
+        box-shadow: 10px 1px 100px rgba(200, 20, 10, 0.5);">
+    </div>
     <hr>
     <samp>
-        <h2 style="color: red; font-family: 'Arial', sans-serif; font-size: 1.5em; text-align: left; padding: 1px; background-color: #ecf0f1; border-radius: 10px; width: 8%; margin: 1px;">
+        <h2 style="color: red; font-family: 'Arial', sans-serif; font-size: 1.5em; text-align: left; padding: 1px; background-color: #ecf0f1; border-radius: 10px; width: max-content; margin: 1px;">
             Education</h2>
         <ul>
             <li><b>10th Class (Allahabad Board)</b> : 72%</li>
@@ -51,7 +81,7 @@
     </samp>
     <hr>
     <samp>
-        <h2 style="color: red; font-family: 'Arial', sans-serif; font-size: 1.5em; text-align: left; padding: 1px; background-color: #ecf0f1; border-radius: 20px; width: 4%; margin: 1px;">
+        <h2 style="color: red; font-family: 'Arial', sans-serif; font-size: 1.5em; text-align: left; padding: 1px; background-color: #ecf0f1; border-radius: 20px; width: max-content; margin: 1px;">
             Skills</h2>
         <ul>
             <li><b>JAVA</b></li>
@@ -69,7 +99,7 @@
     </samp>
     <hr>
     <samp>
-        <h2 style="color: red; font-family: 'Arial', sans-serif; font-size: 1.5em; text-align: left; padding: 1px; background-color: #ecf0f1; border-radius: 20px; width: 6.5%; margin: 1px;">
+        <h2 style="color: red; font-family: 'Arial', sans-serif; font-size: 1.5em; text-align: left; padding: 1px; background-color: #ecf0f1; border-radius: 20px; width: max-content; margin: 1px;">
             Hobbies</h2>
         <ul>
             <li>Listening and singing Music</li>
@@ -82,7 +112,7 @@
 <hr>
 <footer>
     <samp>
-        <h2 style="color: red; font-family: 'Arial', sans-serif; font-size: 1.5em; text-align: left; padding: 1px; background-color: #ecf0f1; border-radius: 20px; width: 6%; margin: 1px;">
+        <h2 style="color: red; font-family: 'Arial', sans-serif; font-size: 1.5em; text-align: left; padding: 1px; background-color: #ecf0f1; border-radius: 20px; width: max-content; margin: 1px;">
             Contact</h2>
         <ul>
             <li><b>Email:</b> tavarakali82@gmail.com</li>
@@ -105,9 +135,17 @@
         </h2>
     </samp>
 </footer>
-<h5 style="color: red; font-family: 'Arial', sans-serif; font-size: 0.6em;
-        text-align: left; padding: 1px; background-color: #ecf0f1; border-radius: 5px; width: 10%;
-        float: right; margin-right: 20px; margin-bottom: 20px;">
+<h5 style="color: red;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    text-align: right;
+    padding: 1px;
+    background-color: #blue;
+    border-radius: 10px;
+    width: max-content;
+    float: right;
+    margin-right: 30px;
+    margin-top: 20px;">
     Stay updated and keep growing</h5>
 
 
