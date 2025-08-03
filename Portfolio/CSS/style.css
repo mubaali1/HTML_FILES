@@ -96,3 +96,10 @@ h2:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
 }
+
+ul>li:hover{
+    background-color: beige;
+    font-weight: bold;
+    text-align: justify;
+
+}
