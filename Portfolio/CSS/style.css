@@ -1,42 +1,92 @@
-*{
-    font-family : "courier new";
+* {
+    font-family: "courier new";
+    /* background-color: white; */
+    padding: auto;
+    background-image: src="../images/IMG-20250306-WA0005.jpg" alt="my_image";
+}
+
+h1,h2,h3{
+    color: red; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.5em; text-align: left; 
+    padding: 1px; 
+    background-color: #ecf0f1; 
+    border-radius: 20px; 
+    width: max-content; 
+    margin: 1px;
+}
+
+h1::first-letter {
+    color: black;
+}
+
+
+.img {
+    border: solid black 1px;
+    border-radius: 0 50px 0 50px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    padding: 5px;
+    margin: 1px;
+
+}
+
+button {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    color: black;
+
+}
+
+button:hover {
+    transform: scale(1.05);
+    color: red;
+    font-weight: bold;
     background-color: white;
+    padding: 0px 0px 0px 0px ;
 }
 
-#login{
-    background-color: cyan;
-    color:black;
-}
-#signup{
-    background-color: cyan;
-    color:black;
+.Portfolio {
+    padding: 0px 0px 0px 0px ;
+    margin-left: 2%;
+   background-color: white;
+   color: red;
 }
 
-h1, h3{
-color:red;
+.Portfolio:hover {
+    font-weight: bold;
+    background-color: white;
+    color: red;
+    padding: 0px 0px 0px 0px ;
+    border-radius: 20%;
 }
 
-p + h3 {
-text-decoration: underline;
+.right-text {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    margin: 0% 3% 3% 0% ;
 }
 
-nav ul li a{
-color:red;
+#span:hover{
+    background-color: white;
+    color: black;
+    font-style:italic;
+    font-weight: 600;
 }
 
-.upvote{
-background-color:grey;
-color:white;
+.heading{
+    font-weight: bold;
+    margin-bottom: 1%;
+    display: flex;
 }
-
-.upvote + button {
-background-color:lightblue;
-color:black;
-}
-h1::first-letter{
-color:green;
-}
-
-div{
-    display: inline;
+/* This is the CSS code you provided */
+h2:hover {
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
 }
