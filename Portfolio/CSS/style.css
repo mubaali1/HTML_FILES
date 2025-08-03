@@ -33,6 +33,7 @@ h1::first-letter {
 }
 
 button {
+    font-size: larger;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease;
     color: black;
@@ -48,6 +49,7 @@ button:hover {
 }
 
 .Portfolio {
+    font-size: larger;
     padding: 0px 0px 0px 0px ;
     margin-left: 2%;
    background-color: white;
@@ -55,6 +57,7 @@ button:hover {
 }
 
 .Portfolio:hover {
+    font-size: larger;
     font-weight: bold;
     background-color: white;
     color: red;
