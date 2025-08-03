@@ -22,14 +22,17 @@ h1::first-letter {
 
 
 .img {
-    border: solid black 1px;
-    border-radius: 0 50px 0 50px;
+    border: solid black 3px;
+    border-radius: 50px 50px 0 50px;
     width: 350px;
     height: 500px;
     display: inline-block;
     padding: 5px;
     margin: 1px;
 
+}
+.img:hover{
+    background-color: red;
 }
 
 button {
