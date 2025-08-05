@@ -1,0 +1,40 @@
+.smile {
+    background-color: pink;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.eye {
+   
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%; 
+    position: absolute;
+}
+
+#left-eye {
+    /* 3. Position the left eye using top and left properties */
+    top: 100px;
+    left: 100px;
+}
+
+#right-eye {
+    /* 3. Position the right eye using top and left properties */
+    top: 100px;
+    right: 100px;
+}
+
+#mouth {
+    background-color: red;
+    height: 75px;
+    width: 200px;
+    border-radius: 0px 0px 70px 70px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
