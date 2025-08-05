@@ -1,5 +1,5 @@
 .smile {
-    background-color: pink;
+    background-color: rgb(231, 187, 195);
     height: 400px;
     width: 400px;
     border-radius: 50%;
@@ -30,7 +30,7 @@
 }
 
 #mouth {
-    background-color: red;
+    background-color: rgb(165, 86, 86);
     height: 75px;
     width: 200px;
     border-radius: 0px 0px 70px 70px;
