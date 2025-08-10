@@ -1,0 +1,127 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    width: 150px;
+    height: 150px;
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: solid 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+    animation: animate 0.5s forwards infinite;
+    box-shadow: 10ch 5cap 10px rgba(10, 16, 31, 0.5);
+    transition: transform 0.9s ease-in;
+
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+        background-color: #fff;
+        color: black;
+    }
+
+    10% {
+        transform: rotate(30deg);
+        background-color: #f0f;
+        color: white;
+        border-radius: 25px;
+    }
+
+    20% {
+        transform: rotate(45deg);
+        background-color: #f00;
+        color: brown;
+
+
+    }
+
+    30% {
+        transform: rotate(60deg);
+        background-color: #0f0;
+        color: rgb(0, 128, 0);
+
+        ;
+    }
+
+    40% {
+        transform: rotate(90deg);
+        background-color: #00f;
+        color: rgb(0, 0, 255);
+    }
+
+    50% {
+        transform: rotate(120deg);
+        background-color: #ff0;
+        color: rgb(255, 255, 0);
+    }
+
+    60% {
+        transform: rotate(150deg);
+        background-color: rgb(65, 60, 59);
+        color: rgb(128, 0, 128);
+
+    }
+
+    70% {
+        transform: rotate(180deg);
+        background-color: #00f;
+        color: rgb(0, 0, 139);
+    }
+
+    80% {
+        transform: rotate(210deg);
+        background-color: rgb(96, 18, 45);
+        color: rgb(139, 0, 0);
+    }
+
+    84% {
+        transform: rotate(240deg);
+        background-color: #f00;
+        color: rgb(255, 0, 0);
+
+    }
+
+    85% {
+        transform: rotate(270deg);
+        background-color: rgb(0, 3, 22);
+        color: rgb(0, 0, 0);
+    }
+
+    90% {
+        transform: rotate(300deg);
+        background-color: cyan;
+        color: rgb(0, 255, 255);
+    }
+
+    95% {
+        transform: rotate(330deg);
+        background-color: rosybrown;
+        color: rgb(188, 143, 143);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: #0ff;
+        color: rgb(0, 255, 0);
+    }
+
+}
