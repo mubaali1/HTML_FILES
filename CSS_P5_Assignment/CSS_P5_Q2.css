@@ -1,0 +1,23 @@
+#container{
+    width: 900px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    font-size: 24px;
+    border: solid 2px lightgreen;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.box {
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: 24px;
+    line-height: 50px;
+}
