@@ -9,12 +9,100 @@
 
 
 
-.box{
-    height: 100px;
-    width: 100px;
+/*.box{
+    height: 120px;
+    width: 300px;
     background-color: pink;
     border: 2px solid black;
+    border-radius: 5%;
+}
+.bo{
+background-color: pink;
+    border: 2px solid black;
     border-radius: 50%;
-    display: inline-block;
+    Display: Block;
+}
 
+#one{
+  background-color:red;
+}
+#two{
+  background-color:white;
+}
+#three{
+  background-color:green;
+}*/
+
+
+body {
+    /* Center the flag on the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.flag-container {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    box-shadow: -9px 9px 0.1px black;
+}
+
+.stripe {
+    width: 100%;
+    height: 33.33%;
+}
+
+.saffron {
+    background-color: #FF9933;
+}
+
+.white {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.green {
+    background-color: #138808;
+}
+
+.ashoka-chakra {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #000080;
+    position: relative;
+}
+
+.ashoka-chakra::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100%;
+    background-color: #000080;
+}
+
+/* The spokes of the wheel are created using a loop in a CSS preprocessor or manually like this */
+/* For simplicity, we are using a simplified version with a single line */
+/* To create all 24 spokes, you would need to add a line for each and rotate it by 15 degrees */
+/* For example: .ashoka-chakra::after { ... transform: rotate(15deg); } */
+
+.ashoka-chakra::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 2px;
+    height: 100%;
+    background-color: #000080;
 }

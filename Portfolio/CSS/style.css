@@ -1,8 +1,12 @@
+
 * {
-    font-family: "courier new";
-    /* background-color: white; */
-    padding: auto;
-    background-image: src="../images/IMG-20250306-WA0005.jpg" alt="my_image";
+    font-family: "Courier New", monospace;
+    background-color: white;
+    padding: 0; /* 'auto' is not valid for padding */
+    background-image: url("../images/IMG-20250306-WA0005.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* or 'contain' depending on your needs */
+    background-position: center;
 }
 
 h1,h2,h3{
