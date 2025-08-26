@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #ffff;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    margin: 0;   /* ✅ remove margin */
+}
+
+.side_bar {
+    background-color: black(62, 215, 62);
+    width: 22.5rem;
+    border-radius: 2rem;
+    margin-right: 0.5rem;
+    overflow: hidden;
+}
+.side_bar:hover {
+    overflow: auto; /* Show scrollbar only on hover */
+    background-color: #121212; /* Change background color on hover */
+}
+
+.side_bar::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+    height: 0; /* Hide scrollbar */
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding : 0 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+}
+.main-content::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+    height: 0; /* Hide scrollbar */
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+/* This rule will now be visible because the background color is not being overridden */
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 3.5rem;
+    padding: 0.5rem 0.75rem;
+    /* Add padding for better spacing */
+
+}
+
+.nav_option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    /* Set opacity to 0.8 */
+}
+
+.nav_option:hover {
+    opacity: 1;
+    /* Full opacity on hover */
+}
+
+.nav_option i,
+a {
+    font-size: 1rem;
+    /* Add space between icon and text */
+    margin-left: 0.5rem;
+    /* Add space between icon and text */
+}
+
+.library {
+    background-color: #121212;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 0.25rem;
+    height: 100%;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    /* Add padding for better spacing */
+    justify-content: space-between;
+
+
+}
+
+.lib_option {
+    opacity: 0.7;
+}
+
+.lib_option:hover {
+    opacity: 1;
+    /* Change background color on hover */
+}
+
+.lib_option img {
+
+    height: 1rem;
+}
+
+.icons {
+    font-size: 1rem;
+    display: flex;
+    gap: 1rem;
+    /* justify-content: space-between; */
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 0.5rem;
+    gap: 1rem;
+    /* Add space between icons */
+}
+
+.icons i:hover {
+    opacity: 1;
+    /* Full opacity on hover */
+}
+
+.box {
+    height: 7rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    padding: 1.25rem 1rem 1.25rem 1rem;
+    margin: 0.5rem 0 1.25rem 0;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 600
+}
+
+.box-p2 {
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge {
+    color: black;
+    height: 2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    width: fit-content;
+}
+
+.dark-badge{
+    background-color: #0000;
+    color: #ffff;
+
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0.010rem;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    z-index: 1000;
+}
+
+.stickey-nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.nav-item{
+    margin-right: 0.75rem;
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    margin: 0.25rem;
+    width: 180px;
+
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.25rem;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-top: 0.25rem;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #121212;
+    margin-top: 1rem;
+    border-top: 1px solid white;
+    opacity: 0.1;
+}
+
+.album {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* align items left */
+    width: 25%;
+    background-color: #121212;
+    height: 100%;
+    padding-left: 1rem;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: row;   /* image + info side by side */
+    align-items: center;
+    gap: 1rem;             /* space between image and text */
+    width: 100%;
+}
+
+.album-cover {
+    width: 50px;  /* image size */
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.album-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.album-artist {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.album-time {
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+.album-info i {
+    font-size: 1.2rem;
+    color: #ffff;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.album-info i:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+.music_player {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4.5rem; /* Adjust to your design */
+    padding: 0 1rem;
+}
+
+
+.controls {
+    width: 25%;
+    background-color: #121212;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* push everything to the right */
+    padding-right: 1rem;
+}
+
+.control-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* space between icons */
+}
+
+.control-info i {
+    font-size: 1.1rem;
+    color: #fff;
+    opacity: 0.5; /* initial opacity */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.control-info i:hover {
+    opacity: 1;
+}
+
+.volume-control {
+    width: 80px;   /* adjust slider width */
+    cursor: pointer;
+}
+
+
+.player{
+    width: 50%;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;   /* smaller spacing between control icons */
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.playback-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;   /* ✅ keeps time labels close to progress bar */
+    width: 100%;
+    padding: 0.25rem 0;
+}
+
+.progress-bar {
+    flex: 1;       /* ✅ makes bar stretch between time labels */
+    max-width: 400px;
+}
+
+
+.player img {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+.player img:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
